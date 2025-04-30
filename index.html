@@ -1,72 +1,113 @@
-<!DOCTYPE html>
-<html lang="fa">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دفترخانه اسناد رسمی</title>
+  <title>دفترخانه اسناد رسمی ۱۵۰ شال</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f4f6f8;
-      padding: 20px;
-      direction: rtl;
-      color: #2c3e50;
+      margin: 0;
+      background-color: #f5faff;
+      color: #222;
     }
-    h1 {
-      text-align: center;
-      color: #1a237e;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-      background-color: white;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px 15px;
-      text-align: center;
-    }
-    th {
-      background-color: #3f51b5;
+    header {
+      background-color: #0077cc;
       color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f0f0f0;
-    }
-    .footer {
+      padding: 20px;
       text-align: center;
-      margin-top: 50px;
-      color: #757575;
-      font-size: 14px;
+    }
+    nav {
+      background-color: #005fa3;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #004b85;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <h1>دفترخانه اسناد رسمی</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>شماره دفتر</th>
-        <th>نام سردفتر</th>
-        <th>آدرس</th>
-        <th>شماره تماس</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>۱۵۰</td>
-        <td>زهرا عسکری</td>
-        <td>شال، بلوار امام خمینی، بعد از اداره آب</td>
-        <td>02834413426</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="footer">
-    طراحی شده توسط zahraaskari عزیز
-  </div>
+  <header>
+    <h1>دفترخانه اسناد رسمی ۱۵۰ شال</h1>
+    <p>سردفتر: زهرا عسکری لویه</p>
+  </header>
+  <nav>
+    <a href="#about">معرفی دفتر</a>
+    <a href="#services">خدمات</a>
+    <a href="#gallery">گالری</a>
+    <a href="#contact">تماس با ما</a>
+    <a href="#reserve">رزرو</a>
+  </nav>
+  <section id="about">
+    <h2>معرفی دفتر</h2>
+    <p>دفترخانه اسناد رسمی ۱۵۰ شال، به مدیریت زهرا عسکری لویه، با هدف ارائه خدمات معتبر و قابل اعتماد در زمینه تنظیم انواع اسناد رسمی مهم فعالیت می‌کند. این دفترخانه با رعایت قوانین، صحت و اعتبار اسناد شما را تضمین می‌نماید.</p>
+  </section>
+  <section id="services">
+    <h2>خدمات</h2>
+    <ul>
+      <li>تنظیم وکالت‌نامه‌های مختلف</li>
+      <li>اقرارنامه، تعهدنامه، رضایت‌نامه</li>
+      <li>قراردادهای رسمی</li>
+      <li>نقل و انتقال املاک</li>
+      <li>صلح و گواهی امضا</li>
+    </ul>
+  </section>
+  <section id="gallery">
+    <h2>گالری عکس</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/150" alt="sample image">
+      <img src="https://via.placeholder.com/150" alt="sample image">
+    </div>
+  </section>
+  <section id="contact">
+    <h2>تماس با ما</h2>
+    <p>آدرس: شال، بلوار امام خمینی، بعد از اداره آب</p>
+    <p>تلفن: 02834413426</p>
+    <p>اینستاگرام: <a href="https://instagram.com/zahraaskarilooyeh" target="_blank">zahraaskarilooyeh</a></p>
+    <p>واتساپ، روبیکا، ایتا، بله: 09120961831</p>
+  </section>
+  <section id="reserve">
+    <h2>فرم رزرو</h2>
+    <form>
+      <input type="text" placeholder="نام و نام خانوادگی" required>
+      <input type="tel" placeholder="شماره تماس" required>
+      <textarea placeholder="موضوع درخواست" required></textarea>
+      <button type="submit">ارسال درخواست</button>
+    </form>
+  </section>
 </body>
 </html>
